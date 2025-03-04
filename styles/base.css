@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #333;
+    color: #4616c9;
 }
 
 header, main, footer {
@@ -16,7 +16,7 @@ header, main, footer {
 
 /* Header Styles */
 header {
-    background-color: #333;
+    background-color: #13b6df;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -81,7 +81,7 @@ main {
 
 /* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: #13b6df;
     color: #fff;
     text-align: center;
     padding: 10px 0;
