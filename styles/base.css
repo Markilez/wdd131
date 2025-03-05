@@ -15,7 +15,6 @@ body {
     margin-bottom: 15px; /* Keep existing margin */
 }
 
-
 header, main, footer {
     max-width: 1200px;
     margin: 0 auto;
