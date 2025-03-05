@@ -8,6 +8,14 @@ body {
     color: #4616c9;
 }
 
+.profile-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px; /* Maintain existing border radius */
+    margin-bottom: 15px; /* Keep existing margin */
+}
+
+
 header, main, footer {
     max-width: 1200px;
     margin: 0 auto;
