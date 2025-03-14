@@ -1,0 +1,12 @@
+nav ul {
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+.temple-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+}

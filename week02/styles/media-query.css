@@ -1,0 +1,22 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #b0c4de; /* Light Steel Blue */
+    padding: 1rem;
+    background-color: #f0f8ff; /* Alice Blue or choose your own blueish color */
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: #ffffff; /* White or light background */
+}
