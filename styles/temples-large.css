@@ -1,12 +1,16 @@
-nav ul {
-    flex-direction: row;
-    justify-content: center;
-}
+/* Larger View Design */
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
 
-nav ul li {
-    margin: 0 1rem;
-}
+    .temple-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+    }
 
-.temple-grid {
-    grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+    img {
+        height: 250px; /* Slightly larger images on desktop */
+    }
 }
