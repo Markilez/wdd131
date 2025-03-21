@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zimbabwe - A Country of Wonders</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Zimbabwe - A Country of Wonders</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Weather</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <picture>
+        <source srcset="images/victoria-falls-small.webp" media="(max-width: 600px)">
+        <source srcset="images/victoria-falls-medium.webp" media="(max-width: 1024px)">
+        <img src="images/victoria-falls-large.webp" alt="Victoria Falls">
+      </picture>
+      <div class="cta">
+        <p>Discover Zimbabwe - Land of Natural Wonders</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Zimbabwe</h2>
+      <p>Zimbabwe is a landlocked country in Southern Africa, known for its dramatic landscapes, diverse wildlife, and rich cultural heritage. Highlights include the breathtaking Victoria Falls, one of the largest and most famous waterfalls in the world, the ancient Great Zimbabwe Ruins which showcase the country's medieval civilization, and Hwange National Park, renowned for its massive elephant herds and variety of wildlife. Additionally, the country boasts the scenic Eastern Highlands, with their lush mountains and rolling hills, ideal for hiking and exploring. The charming city of Harare, the capital, offers vibrant markets and a blossoming art scene, while the historical town of Bulawayo is a gateway to numerous attractions, including the Matobo National Park, home to impressive rock art and granite kopjes. Zimbabwe's cultural tapestry is rich and varied, reflecting the influences of its multiple ethnic groups, with traditional music, dance, and art playing a crucial role in community life. Overall, Zimbabwe's natural beauty and cultural depth make it a fascinating destination for travelers seeking adventure and insight into Southern African heritage.</p>
+      <img src="images/great-zimbabwe.webp" alt="Great Zimbabwe Ruins" class="about-image">
+    </section>
+
+    <!-- Big Five Section -->
+    <section id="big-five">
+      <h2>The Big Five</h2>
+      <img src="images/big-five.webp" alt="The Big Five" class="big-five-image">
+      <p>The Big Five—lion, leopard, elephant, rhinoceros, and buffalo—are the most iconic and sought-after wildlife species in Africa. Zimbabwe is home to all five, making it a prime destination for safari enthusiasts. Hwange National Park, in particular, is renowned for its large elephant population, while Mana Pools National Park offers incredible opportunities to spot lions and leopards in their natural habitat.</p>
+    </section>
+
+    <!-- Weather Section -->
+    <section id="weather">
+      <h2>Weather</h2>
+      <div class="weather-info">
+        <img src="images/weather-icon.svg" alt="Weather Icon" class="weather-icon">
+        <p>Temperature: <span id="temperature">25</span>°C</p>
+        <p>Wind Speed: <span id="wind-speed">10</span> km/h</p>
+        <p>Windchill: <span id="windchill">N/A</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="current-year">2025</span> | WDD 131 - Dynamic Web Fundamentals | Last Modified: <span id="last-modified">2025-03-21</span></p>
+  </footer>
+</body>
+</html>
