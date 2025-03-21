@@ -1,21 +1,29 @@
 /* Global Styles */
-body {
+:root {
+    --primary-color: #0d6efd; /* Primary color for borders and accents */
+    --secondary-color: #1a1a1a; /* Secondary color for backgrounds */
+    --text-color: #000; /* Default text color */
+    --background-color: #fff; /* Default background color */
+    --border-color: #c5c5e2; /* Border color */
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #000;
-    background-color: #fff;
+    color: var(--text-color);
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
-    border: 2px solid #c5c5e2; /* Border around the entire page */
+    border: 2px solid var(--border-color); /* Border around the entire page */
   }
   
   /* Header */
   header {
-    background-color: #1a1a1a;
+    background-color: var(--secondary-color);
     color: #b0b0b0;
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid hwb(216 70% 3%); /* Border below the header */
+    border-bottom: 3px solid var(--primary-color); /* Border below the header */
   }
   
   header h1 {
@@ -45,7 +53,7 @@ body {
   #hero {
     position: relative;
     text-align: center;
-    border-bottom: 3px solid #29313d; /* Border below the hero section */
+    border-bottom: 3px solid var(--primary-color); /* Border below the hero section */
   }
   
   #hero img {
@@ -64,28 +72,28 @@ body {
     padding: 15px 30px;
     border-radius: 8px;
     color: #fff;
-    border: 2px solid #c5c5e2; /* Border around the CTA button */
+    border: 2px solid var(--border-color); /* Border around the CTA button */
   }
   
   /* About Section */
   #about {
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid #c5c5e2; /* Border below the about section */
+    border-bottom: 3px solid var(--primary-color); /* Border below the about section */
   }
   
   /* Big Five Section */
   #big-five {
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid #c5c5e2; /* Border below the Big Five section */
+    border-bottom: 3px solid var(--primary-color); /* Border below the Big Five section */
   }
   
   /* Weather Section */
   #weather {
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid #c5c5e2; /* Border below the weather section */
+    border-bottom: 3px solid var(--primary-color); /* Border below the weather section */
   }
   
   .weather-info {
@@ -98,21 +106,50 @@ body {
   .weather-icon {
     width: 50px;
     height: auto;
-    border: 2px solid #1a1a1a;
+    border: 2px solid var(--secondary-color);
     border-radius: 8px;
   }
   
   /* Footer */
   footer {
-    background-color: #1a1a1a;
+    background-color: var(--secondary-color);
     color: #b0b0b0;
     padding: 20px;
     text-align: center;
-    border-top: 3px solid #c5c5e2; /* Border above the footer */
+    border-top: 3px solid var(--primary-color); /* Border above the footer */
   }
   
   footer p {
     margin: 5px 0;
     font-size: 0.9rem;
+  }
+  
+  /* ::after Pseudo-Element */
+  footer::after {
+    content: "© 2025 Zimbabwe Wonders";
+    display: block;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #b0b0b0;
+  }
+  
+  /* Media Query for Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .cta {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  
+    #hero img {
+      max-height: 300px;
+    }
+  
+    .weather-info {
+      flex-direction: column;
+    }
   }
   
