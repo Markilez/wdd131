@@ -7,7 +7,7 @@
     }
 
     .temple-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
     }
 
     img {
