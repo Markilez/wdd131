@@ -4,7 +4,7 @@ const temples = [
         location: "Preston, England",
         dedicated: "1998",
         area: 69630,
-        image: "images/prestontemple.jpg" // Replace with actual image URL
+        image: "images/prestontemple.jpg"
     },
     {
         name: "Gilbert Arizona Temple",
@@ -62,7 +62,6 @@ const temples = [
         area: 382207,
         image: "images/saltlakecitytemple.jpg"
     },
-    // Add additional temple objects here
 ];
 
 function displayTemples(temples) {
@@ -93,7 +92,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
         event.preventDefault();
         const filter = event.target.getAttribute('data-filter');
 
-        let filteredTemples = temples;
+        let filteredTemples;
 
         switch (filter) {
             case 'old':
@@ -110,7 +109,8 @@ document.querySelectorAll('nav ul li a').forEach(link => {
                 break;
             case 'all':
             default:
-                break; // No filtering
+                filteredTemples = temples; // Show all temples
+                break;
         }
 
         displayTemples(filteredTemples);
