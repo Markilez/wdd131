@@ -20,7 +20,9 @@
                 <label for="productName">Product Name:</label>
                 <select id="productName" name="productName" required>
                     <option value="" disabled selected>Select a Product ...</option>
-                    <!-- Product options will be dynamically populated by JavaScript -->
+                    <option value="Tyres" data-features="Durability,Tread Life,Wet Grip,Noise Reduction">Tyres</option>
+                    <option value="Engine Cleaner" data-features="Grease Removal,Engine Protection,Corrosion Prevention,Easy Application">Engine Cleaner</option>
+                    <option value="Engine Oil" data-features="Viscosity,Engine Protection,Heat Resistance,Fuel Efficiency">Engine Oil</option>
                 </select>
             </div>
 
@@ -45,10 +47,9 @@
             <!-- Useful Features -->
             <fieldset class="form-group">
                 <legend>Useful Features:</legend>
-                <label><input type="checkbox" name="features" value="Feature 1"> Feature 1</label>
-                <label><input type="checkbox" name="features" value="Feature 2"> Feature 2</label>
-                <label><input type="checkbox" name="features" value="Feature 3"> Feature 3</label>
-                <label><input type="checkbox" name="features" value="Feature 4"> Feature 4</label>
+                <div id="featuresContainer">
+                    <!-- Features will be dynamically populated here -->
+                </div>
             </fieldset>
 
             <!-- Written Review -->
