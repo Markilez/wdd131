@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/form-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Review Confirmation</h1>
+    </header>
+
+    <main>
+        <p>Thank you for your review!</p>
+        <p>Total reviews submitted: <span id="reviewCount"></span></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BYU-I. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Display the review count
+        window.onload = function() {
+            const reviewCount = localStorage.getItem('reviewCount') || 0;
+            document.getElementById('reviewCount').textContent = reviewCount;
+        };
+    </script>
+</body>
+</html>
