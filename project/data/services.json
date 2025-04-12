@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Oil Change",
+        "description": "Regular oil changes to keep your engine running smoothly.",
+        "price": 29.99
+    },
+    {
+        "name": "Brake Inspection and Repair",
+        "description": "Comprehensive brake inspection and repair services.",
+        "price": 89.99
+    },
+    {
+        "name": "Tire Rotation",
+        "description": "Ensure even tire wear with regular rotations.",
+        "price": 19.99
+    },
+    {
+        "name": "Engine Diagnostics",
+        "description": "Advanced diagnostics to identify vehicle issues.",
+        "price": 49.99
+    },
+    {
+        "name": "Battery Replacement",
+        "description": "Personalize your vehicle with custom modifications.",
+        "price": 199.99
+    }
+]
+
